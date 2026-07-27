@@ -1,7 +1,25 @@
 aid: infera
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/infera.png
 name: Infera
-description: Infera is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Infera is an AI-native laboratory automation platform (Y Combinator, Spring 2026)
+  that converts plain-English descriptions of experiments into validated, instrument-ready runs
+  across the lab instruments a team already owns. It compiles protocols into vendor-specific
+  scripts for liquid handlers, plate readers, mass spectrometers, thermocyclers and centrifuges
+  (Opentrons, Hamilton, Tecan and others), limits AI to initial drafts while keeping downstream
+  steps deterministic and fully checkable, supports both automated and manual bench procedures,
+  and maintains an end-to-end audit trail of protocols and runs. Founded in San Francisco by
+  Troy Zhang and Chloe Sow.
 url: https://raw.githubusercontent.com/api-evangelist/infera/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Laboratory Automation
+- Biotech
+- Life Sciences
+- Artificial Intelligence
+- Protocols
+- SaaS
+- Automation
 apis: []
+common:
+- type: TrustCenter
+  url: security/infera-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/infera-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/infera-domain-security.yml
+- type: Website
+  url: https://www.infera.bio
+- type: TermsOfService
+  url: https://www.infera.bio/terms
+- type: PrivacyPolicy
+  url: https://www.infera.bio/privacy
+- type: Security
+  url: https://www.infera.bio/security
+- type: Compliance
+  url: https://www.infera.bio/security
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://www.infera.bio/security
+url: https://www.infera.bio/security
+last_updated: '2026-04-09'
+certifications:
+- SOC 2 Type II
+- HIPAA
+compliance:
+- claim: SOC 2 Type II
+  detail: Hosted on SOC 2 Type II certified cloud infrastructure (certification applies to the
+    underlying cloud provider, not asserted for Infera itself).
+- claim: HIPAA-ready
+  detail: HIPAA-ready architecture for clinical research environments.
+- claim: GxP-compatible
+  detail: GxP-compatible audit trails for regulated workflows.
+- claim: 21 CFR Part 11
+  detail: Electronic records and signatures support.
+infrastructure:
+- All data encrypted in transit (TLS 1.3) and at rest (AES-256)
+- Network isolation between customer environments
+- Automated vulnerability scanning and patching
+access_controls:
+- Role-based access control (RBAC)
+- Multi-factor authentication support
+- SSO integration (SAML 2.0, OpenID Connect)
+- Comprehensive audit logging of all user actions
+data_handling:
+- Protocol data is never used to train models or shared with third parties
+- Customer data is logically isolated
+- Data deletion requests fulfilled within 30 days
+- Regular backups with point-in-time recovery
+evidence:
+- source: https://www.infera.bio/security
+  keywords:
+  - soc 2
+  - hipaa
+  - gxp
+  - 21 cfr part 11
+  - rbac
+  - sso
